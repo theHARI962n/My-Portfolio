@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -9,12 +11,70 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <ul className="hidden md:flex space-x-8 text-lg">
-          <li><a href="#home" className="hover:text-cyan-400">Home</a></li>
-          <li><a href="#about" className="hover:text-cyan-400">About</a></li>
-          <li><a href="#skills" className="hover:text-cyan-400">Skills</a></li>
-          <li><a href="#projects" className="hover:text-cyan-400">Projects</a></li>
-          <li><a href="#publications" className="hover:text-cyan-400">Publications</a></li>
-          <li><a href="#contact" className="hover:text-cyan-400">Contact</a></li>
+          <li>
+            <Link
+              to="/"
+              
+              className="cursor-pointer hover:text-cyan-400"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-cyan-400"
+            >
+              About
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="skills"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-cyan-400"
+            >
+              Skills
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="projects"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-cyan-400"
+            >
+              Projects
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="publications"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-cyan-400"
+            >
+              Publications
+            </ScrollLink>
+          </li>
+          <li>
+            <ScrollLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer hover:text-cyan-400"
+            >
+              Contact
+            </ScrollLink>
+          </li>
+          <li>
+            <Link to="/blog" className="hover:text-cyan-400">
+              Blog
+            </Link>
+          </li>
         </ul>
 
         {/* Resume Button */}

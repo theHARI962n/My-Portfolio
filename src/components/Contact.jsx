@@ -12,6 +12,8 @@ const Contact = () => {
       <p className="text-lg text-gray-300 mb-8 text-center max-w-2xl">
         Feel free to reach out for collaborations, opportunities, or just a tech
         chat!
+        <br/>
+        Mobile Number: <span className="text-cyan-400">+91 9042590636 </span>
       </p>
 
       <div className="flex space-x-8 text-3xl">
@@ -38,7 +40,9 @@ const Contact = () => {
           <FaLinkedin />
         </a>
       </div>
+      
     </section>
+    
   );
 };
 

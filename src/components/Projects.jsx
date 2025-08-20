@@ -11,28 +11,50 @@ const projects = [
     demo: "https://compileaifront.vercel.app/", // replace with your live demo link
     caseStudy: {
       problem:
-        "Traditional online judges often lack interactive support, making it hard for beginners to debug and learn.",
+        "With Rise in AI , students often arent able to solve DSA problems as they just copy paste problems in GPT and other AI tools.So I came up with a solution to make problem solving intersiting with AI help.In our Solution we have implemented a MERN Stack based online judge platform with AI integration to provide intelligent hints and problem-solving intuition,not the full code.",
       approach:
-        "Built a MERN-based judge with AI-powered hints, role-based authentication, and an in-browser C++ compiler. Deployed using Docker Compose for scalability.",
+        "Built with MERN stack, Made this with file structure of frontend,backend,compiler each as a seperate service so its easier to scale the services in future, role-based authentication with Admin/User roles. Admin will be able to manage the problem list performing CRUD operations and the user will be able to solve problems by writing code in a code editor and submitting it to the compiler, which will then be executed by an in-browser C++ compiler , used uuid for c++ and Code Mirror for compiler interface. AI feedback and Hints are implemented using Gemini API, each feedback and hint is based on the selected problem. Deployed using Docker Compose for scalability.",
       challenges:
-        "Handling real-time code execution securely in the browser and integrating AI suggestions without slowing performance.",
+        "Handling real-time code execution  in the browser and integrating AI suggestions and hints accurately for each problem.",
       result:
-        "Created a scalable, AI-assisted learning tool that makes problem-solving easier and faster for students.",
+        "Created an AI-assisted learning tool that makes problem-solving easier and faster for students, will help them to crack DSA rounds more efficiently.Try the live demo link to experience it and provide your feedback to improve.",
     },
   },
   {
     title: "Renal Cancer Detection",
     description:
       "Hybrid CNN model combining ResNet50 and Xception for medical image analysis, boosting diagnostic accuracy using Kaggle datasets.",
-    tech: ["TensorFlow", "ResNet50", "Xception", "Kaggle"],
-    github: "#", // add your repo if public
+      tech: ["TensorFlow", "ResNet50", "Xception", "Kaggle"],
+    github: "https://github.com/theHARI962n/OJ-Project",
+    demo: "https://compileaifront.vercel.app/", // replace with your live demo link
+    caseStudy: {
+      problem:
+        "With Rise in AI , students often arent able to solve DSA problems as they just copy paste problems in GPT and other AI tools.So I came up with a solution to make problem solving intersiting with AI help.In our Solution we have implemented a MERN Stack based online judge platform with AI integration to provide intelligent hints and problem-solving intuition,not the full code.",
+      approach:
+        "Built with MERN stack, Made this with file structure of frontend,backend,compiler each as a seperate service so its easier to scale the services in future, role-based authentication with Admin/User roles. Admin will be able to manage the problem list performing CRUD operations and the user will be able to solve problems by writing code in a code editor and submitting it to the compiler, which will then be executed by an in-browser C++ compiler , used uuid for c++ and Code Mirror for compiler interface. AI feedback and Hints are implemented using Gemini API, each feedback and hint is based on the selected problem. Deployed using Docker Compose for scalability.",
+      challenges:
+        "Handling real-time code execution  in the browser and integrating AI suggestions and hints accurately for each problem.",
+      result:
+        "Created an AI-assisted learning tool that makes problem-solving easier and faster for students, will help them to crack DSA rounds more efficiently.Try the live demo link to experience it and provide your feedback to improve.",
+    },
   },
   {
-    title: "Sums AI ",
+    title: "Sums AI",
     description:
       "GenAI-powered Article Summarizer tool that summarizes lengthy articles using OpenAI’s GPT API, reducing text length by 80% while maintaining accuracy.",
-    tech: ["React.js", "TailwindCSS", "RapidAPI"],
+      tech: ["React.js", "TailwindCSS", "RapidAPI"],
     github: "https://github.com/theHARI962n/Summize",
+    demo: "https://compileaifront.vercel.app/", // replace with your live demo link
+    caseStudy: {
+      problem:
+        "With Rise in AI , students often arent able to solve DSA problems as they just copy paste problems in GPT and other AI tools.So I came up with a solution to make problem solving intersiting with AI help.In our Solution we have implemented a MERN Stack based online judge platform with AI integration to provide intelligent hints and problem-solving intuition,not the full code.",
+      approach:
+        "Built with MERN stack, Made this with file structure of frontend,backend,compiler each as a seperate service so its easier to scale the services in future, role-based authentication with Admin/User roles. Admin will be able to manage the problem list performing CRUD operations and the user will be able to solve problems by writing code in a code editor and submitting it to the compiler, which will then be executed by an in-browser C++ compiler , used uuid for c++ and Code Mirror for compiler interface. AI feedback and Hints are implemented using Gemini API, each feedback and hint is based on the selected problem. Deployed using Docker Compose for scalability.",
+      challenges:
+        "Handling real-time code execution  in the browser and integrating AI suggestions and hints accurately for each problem.",
+      result:
+        "Created an AI-assisted learning tool that makes problem-solving easier and faster for students, will help them to crack DSA rounds more efficiently.Try the live demo link to experience it and provide your feedback to improve.",
+    },
   },
   // You can add similar caseStudy objects for Renal Cancer Detection & Sums
 ];
@@ -112,7 +134,7 @@ const Projects = () => {
               ✕
             </button>
             <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-              {openProject.title} – Case Study
+              {openProject.title} – How I Built It
             </h3>
             <p className="text-gray-300 mb-2">
               <span className="font-semibold text-white">Problem: </span>

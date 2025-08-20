@@ -47,6 +47,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
+      <p className="mt-20 text-2xl text-gray-300 font-mono font-semibold">"Open to Oppurtunities"</p>
     </section>
   );
 };
