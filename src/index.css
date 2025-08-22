@@ -5,3 +5,22 @@
 body {
     @apply bg-[#0d1117] text-white font-sans;
 }
+
+/* index.css or global.css */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1f2937; /* dark track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #4b5563; /* gray thumb */
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #06b6d4; /* cyan hover */
+  }
+  

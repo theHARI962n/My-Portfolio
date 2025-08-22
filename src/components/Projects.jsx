@@ -10,50 +10,89 @@ const projects = [
     github: "https://github.com/theHARI962n/OJ-Project",
     demo: "https://compileaifront.vercel.app/", // replace with your live demo link
     caseStudy: {
-      problem:
+      problem: [
         "With Rise in AI , students often arent able to solve DSA problems as they just copy paste problems in GPT and other AI tools.So I came up with a solution to make problem solving intersiting with AI help.In our Solution we have implemented a MERN Stack based online judge platform with AI integration to provide intelligent hints and problem-solving intuition,not the full code.",
-      approach:
-        "Built with MERN stack, Made this with file structure of frontend,backend,compiler each as a seperate service so its easier to scale the services in future, role-based authentication with Admin/User roles. Admin will be able to manage the problem list performing CRUD operations and the user will be able to solve problems by writing code in a code editor and submitting it to the compiler, which will then be executed by an in-browser C++ compiler , used uuid for c++ and Code Mirror for compiler interface. AI feedback and Hints are implemented using Gemini API, each feedback and hint is based on the selected problem. Deployed using Docker Compose for scalability.",
-      challenges:
+      ],
+      approach: [
+        "Built with MERN stack, structured into frontend, backend, and compiler services for scalability",
+        "Implemented role-based authentication: ",
+        "Admin → CRUD operations on problem sets.",
+        " User → solve problems using an in-browser C++ compiler.",
+        "Used CodeMirror for code editing and UUID for execution isolation.",
+        " Integrated Gemini API for intelligent, context-based hints tied to each problem.",
+        "Deployed with Docker Compose for scalable service orchestration.",
+      ],
+      challenges: [
         "Handling real-time code execution  in the browser and integrating AI suggestions and hints accurately for each problem.",
-      result:
+        "Managing API communication between frontend, backend, and compiler services was difficult.",
+      ],
+      result: [
         "Created an AI-assisted learning tool that makes problem-solving easier and faster for students, will help them to crack DSA rounds more efficiently.Try the live demo link to experience it and provide your feedback to improve.",
+      ],
     },
   },
   {
     title: "Renal Cancer Detection",
     description:
       "Hybrid CNN model combining ResNet50 and Xception for medical image analysis, boosting diagnostic accuracy using Kaggle datasets.",
-      tech: ["TensorFlow", "ResNet50", "Xception", "Kaggle"],
+    tech: ["TensorFlow", "ResNet50", "Xception", "Kaggle"],
     github: "https://github.com/theHARI962n/OJ-Project",
     demo: "https://compileaifront.vercel.app/", // replace with your live demo link
     caseStudy: {
-      problem:
-        "With Rise in AI , students often arent able to solve DSA problems as they just copy paste problems in GPT and other AI tools.So I came up with a solution to make problem solving intersiting with AI help.In our Solution we have implemented a MERN Stack based online judge platform with AI integration to provide intelligent hints and problem-solving intuition,not the full code.",
-      approach:
-        "Built with MERN stack, Made this with file structure of frontend,backend,compiler each as a seperate service so its easier to scale the services in future, role-based authentication with Admin/User roles. Admin will be able to manage the problem list performing CRUD operations and the user will be able to solve problems by writing code in a code editor and submitting it to the compiler, which will then be executed by an in-browser C++ compiler , used uuid for c++ and Code Mirror for compiler interface. AI feedback and Hints are implemented using Gemini API, each feedback and hint is based on the selected problem. Deployed using Docker Compose for scalability.",
-      challenges:
-        "Handling real-time code execution  in the browser and integrating AI suggestions and hints accurately for each problem.",
-      result:
-        "Created an AI-assisted learning tool that makes problem-solving easier and faster for students, will help them to crack DSA rounds more efficiently.Try the live demo link to experience it and provide your feedback to improve.",
+      problem: [
+        "Kidney cancer cases are rising in India (~2% of all cancers), especially renal cell carcinoma.Early detection is difficult due to limited specialists and subtle imaging patterns often missed in CT scans.Needed an AI-powered system to support early, reliable detection.",
+      ],
+      approach: [
+        "Built a hybrid CNN model combining ResNet50 and Xception, leveraging transfer learning.",
+        "Preprocessed and trained on 10,000+ medical images from Kaggle datasets.",
+        "Used ImageDataGenerator for training/validation pipeline with batch size = 30.",
+        "Extracted deep features via Global Average Pooling and combined outputs with a Concatenate layer.",
+        "Extracted deep features via Global Average Pooling and combined outputs with a Concatenate layer.",
+        "Applied Dropout (0.5) to reduce overfitting and trained with SGD & Adam optimizers.",
+        "Achieved ~98.6% accuracy within 15 epochs, with validation accuracy reaching 100%.",
+        "Saved the trained model as LastModel.h5 and visualized learning curves (loss/accuracy).",
+        "Integrated Streamlit web app → allowed doctors to upload/drag & drop CT scans and instantly get results",
+      ],
+      challenges: [
+        "Ensuring model accuracy while avoiding overfitting on limited medical datasets.",
+        "Designing a user-friendly interface suitable for non-technical healthcare professionals.",
+      ],
+      result: [
+        "Reduced the time doctors spend on manual diagnosis, enabling faster treatment decisions,Provided a tool especially impactful in rural/underserved regions with limited specialists.",
+        "Work was accepted and presented at ICCCNT 2025.",
+      ],
     },
   },
   {
     title: "Sums AI",
     description:
       "GenAI-powered Article Summarizer tool that summarizes lengthy articles using OpenAI’s GPT API, reducing text length by 80% while maintaining accuracy.",
-      tech: ["React.js", "TailwindCSS", "RapidAPI"],
+    tech: ["React.js", "TailwindCSS", "RapidAPI"],
     github: "https://github.com/theHARI962n/Summize",
-    demo: "https://compileaifront.vercel.app/", // replace with your live demo link
+    demo: "", // replace with your live demo link
     caseStudy: {
-      problem:
-        "With Rise in AI , students often arent able to solve DSA problems as they just copy paste problems in GPT and other AI tools.So I came up with a solution to make problem solving intersiting with AI help.In our Solution we have implemented a MERN Stack based online judge platform with AI integration to provide intelligent hints and problem-solving intuition,not the full code.",
-      approach:
-        "Built with MERN stack, Made this with file structure of frontend,backend,compiler each as a seperate service so its easier to scale the services in future, role-based authentication with Admin/User roles. Admin will be able to manage the problem list performing CRUD operations and the user will be able to solve problems by writing code in a code editor and submitting it to the compiler, which will then be executed by an in-browser C++ compiler , used uuid for c++ and Code Mirror for compiler interface. AI feedback and Hints are implemented using Gemini API, each feedback and hint is based on the selected problem. Deployed using Docker Compose for scalability.",
-      challenges:
-        "Handling real-time code execution  in the browser and integrating AI suggestions and hints accurately for each problem.",
-      result:
-        "Created an AI-assisted learning tool that makes problem-solving easier and faster for students, will help them to crack DSA rounds more efficiently.Try the live demo link to experience it and provide your feedback to improve.",
+      problem: [
+        "In today’s fast-paced world, people don’t have time to read long articles, research papers, or blogs","Information overload makes it hard to extract key insights quickly.Traditional summarizers are either not accurate or lack a user-friendly interface."
+      ],
+      approach: [
+        "Built SumsAI, a modern React.js + Vite web app that generates concise summaries from long-form articles.",
+        "Integrated RapidAPI’s Article Summarizer (OpenAI GPT) endpoint for AI-generated summaries.",
+        "Designed a modern, responsive UI using Tailwind CSS for accessibility and clean aesthetics.",
+        "Extracted deep features via Global Average Pooling and combined outputs with a Concatenate layer.",
+        "Added Clipboard integration to copy summaries with one click.",
+        "Built Browser History storage using LocalStorage, enabling users to revisit past summaries without re-fetching.",
+        "Achieved ~98.6% accuracy within 15 epochs, with validation accuracy reaching 100%.",
+        "Saved the trained model as LastModel.h5 and visualized learning curves (loss/accuracy).",
+        "Integrated Streamlit web app → allowed doctors to upload/drag & drop CT scans and instantly get results",
+      ],
+      challenges: [
+        "Managing API errors (failed fetch, no response, etc.) and showing proper error messages.",
+        "Persisting summaries in LocalStorage while keeping the UI state in sync.",
+      ],
+      result: [
+        "Developed a fully functional AI-powered summarizer that reduces long articles into short, digestible summaries.",
+        "Improved productivity for users by letting them save, revisit, and copy summaries instantly.",
+      ],
     },
   },
   // You can add similar caseStudy objects for Renal Cancer Detection & Sums
@@ -121,12 +160,21 @@ const Projects = () => {
         ))}
       </div>
 
-      <p className="mt-20 text-2xl text-gray-300 font-mono font-semibold">Checkout My Other Projects on <a href="https://github.com/theHARI962n" target="_blank" className="text-cyan-400">Github</a></p>
+      <p className="mt-20 text-2xl text-gray-300 font-mono font-semibold">
+        Checkout My Other Projects on{" "}
+        <a
+          href="https://github.com/theHARI962n"
+          target="_blank"
+          className="text-cyan-400"
+        >
+          Github
+        </a>
+      </p>
 
       {/* Modal */}
       {openProject && (
         <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-50">
-          <div className="bg-[#1f2937] p-8 rounded-xl max-w-2xl w-full relative shadow-lg">
+          <div className="bg-[#1f2937] p-8 rounded-xl max-w-2xl w-full relative shadow-lg max-h-[90vh] overflow-y-auto ">
             <button
               onClick={() => setOpenProject(null)}
               className="absolute top-4 right-4 text-gray-400 hover:text-white text-xl"
@@ -138,15 +186,27 @@ const Projects = () => {
             </h3>
             <p className="text-gray-300 mb-2">
               <span className="font-semibold text-white">Problem: </span>
-              {openProject.caseStudy.problem}
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                {openProject.caseStudy.problem.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </p>
             <p className="text-gray-300 mb-2">
               <span className="font-semibold text-white">Approach: </span>
-              {openProject.caseStudy.approach}
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                {openProject.caseStudy.approach.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </p>
             <p className="text-gray-300 mb-2">
               <span className="font-semibold text-white">Challenges: </span>
-              {openProject.caseStudy.challenges}
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                {openProject.caseStudy.challenges.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
             </p>
             <p className="text-gray-300">
               <span className="font-semibold text-white">Result: </span>
