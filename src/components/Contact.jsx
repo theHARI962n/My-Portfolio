@@ -40,7 +40,7 @@ const Contact = () => {
           <FaLinkedin />
         </a>
       </div>
-      
+      <p className="mt-20 text-2xl text-gray-300 font-mono text-center font-semibold">"I am open to collaborations and  would love to work together <br/> on exciting projects."</p>
     </section>
     
   );
