@@ -21,7 +21,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="min-h-screen flex flex-col justify-center items-center mx-8 rounded-[50px] px-6 py-20 bg-[#111827]"
+      className="min-h-screen flex flex-col justify-center items-center mx-8 rounded-[50px] px-6 py-20 bg-[#111827] "
     >
       <h2 className="text-4xl font-bold mb-12 text-cyan-400">Experience</h2>
 
