@@ -30,3 +30,10 @@ This is my personal portfolio website built with [Vite](https://vitejs.dev/), [R
 ```bash
 git clone https://github.com/theHARI962n/My-Portfolio.git
 cd portfolio
+```
+
+## Screenshots
+
+![Homepage](public/UI1.png)
+![Projects](public/UI2.png)
+
