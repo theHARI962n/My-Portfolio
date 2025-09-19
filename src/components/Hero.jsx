@@ -122,7 +122,7 @@ const Hero = () => {
                 <h3 className="text-lg sm:text-xl font-semibold text-cyan-300 mb-2">
                   🔗 Links
                 </h3>
-                <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
+                <div className="flex gap-4 justify-center ">
                   <a
                     href="https://github.com/theHARI962n"
                     target="_blank"

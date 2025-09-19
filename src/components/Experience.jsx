@@ -2,7 +2,7 @@ import React from "react";
 
 const experiences = [
   {
-    role: "Co-op Intern",
+    role: "SWE Co-op Intern",
     org: "Algo University (Y-combinator backed startup)",
     duration: "3 Months",
     description:

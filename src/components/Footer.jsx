@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-center mb-4 bg-slate-300 max-w-fit mx-auto rounded-lg p-2 outline ">
+      <div className="flex justify-center mb-4 bg-slate-300 max-w-fit mx-auto rounded-lg p-2  ">
         <ScrollLink
           to="home" // id of the section you want to scroll to
           smooth={true} // enables smooth scrolling
