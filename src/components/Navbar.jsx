@@ -80,7 +80,7 @@ const Navbar = () => {
 
         {/* Resume Button (always visible) */}
         <a
-          href="/Hariharan_srm_resume.pdf"
+          href="/HariharanRsrm_Resume.pdf"
           download
           className="hidden sm:inline-block ml-4 bg-cyan-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-cyan-300"
         >
@@ -154,7 +154,7 @@ const Navbar = () => {
 
           {/* Resume Button inside mobile menu */}
           <a
-            href="/Hariharan_srm_resume.pdf"
+            href="/HariharanRsrm_Resume.pdf"
             download
             className="block bg-cyan-400 text-black px-4 py-2 rounded-lg font-medium hover:bg-cyan-300 text-center"
           >
