@@ -26,7 +26,7 @@ const Experience = () => {
       <h2 className="text-4xl font-bold mb-12 text-cyan-400">Experience</h2>
 
       <div className="max-w-4xl w-full relative">
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-cyan-400"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-cyan-400 hidden md:block"></div>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
