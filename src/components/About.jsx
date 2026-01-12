@@ -11,26 +11,37 @@ const About = () => {
       <div className="max-w-4xl text-center space-y-6 text-gray-300">
         <p className="text-lg leading-relaxed">
           I’m <span className="text-white font-semibold">HariHaran R</span>, a
-          Computer Science undergraduate at{" "}
-          <span className="text-white font-semibold">SRM Institute of Science and Technology</span>{" "}
-          with a CGPA of <span className="text-cyan-400">9.22/10</span>.
+          final-year Computer Science undergraduate at{" "}
+          <span className="text-white font-semibold">
+            SRM Institute of Science and Technology
+          </span>{" "}
+          with a CGPA of <span className="text-cyan-400">9.22/10</span>, and an{" "}
+          <span className="text-white font-semibold">
+            incoming Software Engineer at Bank of America
+          </span>
+          .
         </p>
 
         <p className="text-lg leading-relaxed">
-          I specialize in{" "}
+          I focus on{" "}
           <span className="text-white font-semibold">
-            full-stack development and AI integration
+            backend engineering, system design, and GenAI (RAG) applications
           </span>
-          , building real-world projects ranging from online judge platforms to
-          deep learning medical applications.
+          , building practical, real-world projects such as PDF RAG chatbots,
+          CompileAI and Renal Cancer Detection.
         </p>
 
         <p className="text-lg leading-relaxed">
-          My goal is to join a strong software development team where I can{" "}
+          Currently, I’m strengthening my foundations more in{" "}
           <span className="text-white font-semibold">
-            apply problem-solving, learn continuously, and contribute to
-            impactful solutions and have a proffessional growth.
+            DSA, low-level & high-level system design, Spring Boot, cloud
+            technologies, and GenAI
           </span>
+          , with a long-term goal of building{" "}
+          <span className="text-white font-semibold">
+            scalable SaaS products
+          </span>
+          .
         </p>
       </div>
     </section>

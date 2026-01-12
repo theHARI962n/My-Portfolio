@@ -15,7 +15,8 @@ const Hero = () => {
 
       {/* Subheading */}
       <p className="text-lg sm:text-xl md:text-2xl max-w-xl sm:max-w-2xl text-gray-300 mb-6">
-        Aspiring Software Developer | Full-Stack & AI Enthusiast
+        Incoming Software Engineer @ Bank of America | Backend, System Design & GenAI (RAG)
+
       </p>
 
       {/* Buttons */}
@@ -90,11 +91,11 @@ const Hero = () => {
                   </li>
                   <li>
                     <a
-                      href="https://github.com/theHARI962n/Summize"
+                      href="https://github.com/theHARI962n/multilingual-rag-chatbot"
                       target="_blank"
                       className="text-cyan-400 hover:underline"
                     >
-                      Sums – Summarizer
+                      ChatwithPDF
                     </a>
                   </li>
                 </ul>

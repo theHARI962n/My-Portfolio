@@ -2,9 +2,9 @@ import React from "react";
 
 const skills = {
   Languages: ["C++", "SQL", "JavaScript"],
-  Web: ["ReactJS", "NodeJS", "Express", "MongoDB", "TailwindCSS", "Git/GitHub"],
+  Web: ["ReactJS", "NodeJS", "Express", "MongoDB", "TailwindCSS", "Spring Boot"],
   DataScience: ["TensorFlow", "Keras", "Pandas", "Matplotlib", "Seaborn"],
-  Tools: ["Docker", "Postman", "Agile"],
+  ToolsAndCloud: ["Docker", "AWS(EC2,S3,IAM)", "Postman", "Agile","Git/GitHub"],
 };
 
 const Skills = () => {

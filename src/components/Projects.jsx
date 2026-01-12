@@ -64,34 +64,34 @@ const projects = [
     },
   },
   {
-    title: "Sums AI",
+    title: "ChatwithPDF",
     description:
-      "GenAI-powered Article Summarizer tool that summarizes lengthy articles using OpenAI’s GPT API, reducing text length by 80% while maintaining accuracy.",
-    tech: ["React.js", "TailwindCSS", "RapidAPI"],
-    github: "https://github.com/theHARI962n/Summize",
+      "A PDF-based RAG chatbot that enables users to ask natural language questions and receive context-aware answers using vector search and a LLM.",
+    tech: ["Python", "Langchain", "Langgraph","LlammaModel","ChromaDB", "Streamlit"],
+    github: "https://github.com/theHARI962n/multilingual-rag-chatbot",
     demo: "", // replace with your live demo link
     caseStudy: {
       problem: [
-        "In today’s fast-paced world, people don’t have time to read long articles, research papers, or blogs","Information overload makes it hard to extract key insights quickly.Traditional summarizers are either not accurate or lack a user-friendly interface."
+        "Technical documents, research papers, and manuals are often long and difficult to search efficiently.",
+        "Traditional keyword-based search fails to capture semantic meaning and context.",
+        "Users need quick, accurate answers without reading entire PDFs."
       ],
       approach: [
-        "Built SumsAI, a modern React.js + Vite web app that generates concise summaries from long-form articles.",
-        "Integrated RapidAPI’s Article Summarizer (OpenAI GPT) endpoint for AI-generated summaries.",
-        "Designed a modern, responsive UI using Tailwind CSS for accessibility and clean aesthetics.",
-        "Extracted deep features via Global Average Pooling and combined outputs with a Concatenate layer.",
-        "Added Clipboard integration to copy summaries with one click.",
-        "Built Browser History storage using LocalStorage, enabling users to revisit past summaries without re-fetching.",
-        "Achieved ~98.6% accuracy within 15 epochs, with validation accuracy reaching 100%.",
-        "Saved the trained model as LastModel.h5 and visualized learning curves (loss/accuracy).",
-        "Integrated Streamlit web app → allowed doctors to upload/drag & drop CT scans and instantly get results",
+        "Built a Streamlit-based interactive chatbot for querying PDF documents using natural language.",
+      "Used PyPDFLoader to extract text from uploaded PDFs and split them into semantically meaningful chunks.",
+      "Generated dense vector embeddings using HuggingFace multilingual-e5-base model.",
+      "Stored and indexed embeddings in a Chroma vector database for efficient similarity search.",
+      "Implemented Retrieval-Augmented Generation (RAG) by combining retrieved context with user queries.",
+      "Integrated Groq’s Llama 3.1 model for fast, low-latency response generation.",
+      "Used LangGraph with in-memory checkpointing to enable conversational memory across chat turns.",
+      "Designed a clean, minimal Streamlit UI with upload, build, and chat workflows."
       ],
       challenges: [
-        "Managing API errors (failed fetch, no response, etc.) and showing proper error messages.",
-        "Persisting summaries in LocalStorage while keeping the UI state in sync.",
+        "Managing vector database persistence and avoiding duplicate embeddings across rebuilds.",
+      "Designing a clean conversational flow while integrating LangGraph memory.",
       ],
       result: [
-        "Developed a fully functional AI-powered summarizer that reduces long articles into short, digestible summaries.",
-        "Improved productivity for users by letting them save, revisit, and copy summaries instantly.",
+        "Delivered a fully functional PDF-based RAG chatbot with conversational memory.",
       ],
     },
   },
@@ -139,7 +139,7 @@ const Projects = () => {
               >
                 View on GitHub
               </a>
-              {project.demo && (
+              {/* {project.demo && (
                 <a
                   href={project.demo}
                   target="_blank"
@@ -148,7 +148,7 @@ const Projects = () => {
                 >
                   Live Demo
                 </a>
-              )}
+              )} */}
               <button
                 onClick={() => setOpenProject(project)}
                 className="inline-block border border-cyan-400 text-cyan-400  px-4 py-2 rounded-lg font-medium hover:bg-purple-400 transition text-center"
