@@ -32,6 +32,9 @@ const About = () => {
         </p>
 
         <p className="text-lg leading-relaxed">
+          I enjoy building AI products and deep diving into low level system design and learning how real world systems work.
+        </p>
+        <p className="text-lg leading-relaxed">
           Currently, I’m strengthening my foundations more in{" "}
           <span className="text-white font-semibold">
             DSA, low-level & high-level system design, Spring Boot, cloud
