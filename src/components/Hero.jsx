@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   const [openSnapshot, setOpenSnapshot] = useState(false);
@@ -10,13 +11,26 @@ const Hero = () => {
     >
       {/* Heading */}
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 truncate">
-        Hi, I'm <span className="text-cyan-400">HariHaran</span>
+        Hi, I'm{" "}
+        <span className="text-cyan-400 inline-flex items-center">
+          <TypeAnimation
+            sequence={[
+              "HariHaran R",
+              1500, // pause after typing
+              "", // delete
+              1000,
+            ]}
+            speed={20}
+            repeat={Infinity}
+          />
+          
+        </span>
       </h1>
 
       {/* Subheading */}
       <p className="text-lg sm:text-xl md:text-2xl max-w-xl sm:max-w-2xl text-gray-300 mb-6">
-        Incoming Software Engineer @ Bank of America | Backend, System Design & GenAI (RAG)
-
+        Incoming Software Engineer @ Bank of America | Backend, System Design &
+        GenAI (RAG)
       </p>
 
       {/* Buttons */}

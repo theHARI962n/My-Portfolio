@@ -9,10 +9,21 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
 import Blog from './components/Blog'; // import your blog component
-
+import { useEffect } from "react";
+import { fairyDustCursor } from "cursor-effects";
+import CursorStarTrail from "./components/CursorStarTrail";
+import './App.css';
 function App() {
+  // useEffect(() => {
+  //   fairyDustCursor({
+  //     colors: ["#22d3ee"], // cyan-400
+  //     particleCount: 3,
+  //   });
+  // }, []);
+
   return (
     <>
+      <CursorStarTrail />
       <Navbar />
       <Routes>
         {/* Homepage */}

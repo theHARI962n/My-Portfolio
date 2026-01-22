@@ -16,12 +16,13 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden md:flex space-x-8 text-lg">
-          <li>
+          <li className="relative group">
             <Link to="/" className="cursor-pointer hover:text-cyan-400">
               Home
             </Link>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
-          <li>
+          <li className="relative group">
             <ScrollLink
               to="about"
               smooth={true}
@@ -30,8 +31,9 @@ const Navbar = () => {
             >
               About
             </ScrollLink>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
-          <li>
+          <li className="relative group">
             <ScrollLink
               to="skills"
               smooth={true}
@@ -40,8 +42,9 @@ const Navbar = () => {
             >
               Skills
             </ScrollLink>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
-          <li>
+          <li className="relative group">
             <ScrollLink
               to="projects"
               smooth={true}
@@ -50,8 +53,9 @@ const Navbar = () => {
             >
               Projects
             </ScrollLink>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
-          <li>
+          <li className="relative group">
             <ScrollLink
               to="publications"
               smooth={true}
@@ -60,8 +64,9 @@ const Navbar = () => {
             >
               Publications
             </ScrollLink>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
-          <li>
+          <li className="relative group">
             <ScrollLink
               to="contact"
               smooth={true}
@@ -70,11 +75,13 @@ const Navbar = () => {
             >
               Contact
             </ScrollLink>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
-          <li>
+          <li className="relative group">
             <Link to="/blog" className="hover:text-cyan-400">
               Blog
             </Link>
+            <span className="absolute -bottom-1 left-1/2 w-1 h-1 bg-cyan-400 rounded-full scale-0 transition-transform duration-300 group-hover:scale-100"></span>
           </li>
         </ul>
 
