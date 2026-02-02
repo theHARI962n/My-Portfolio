@@ -7,7 +7,7 @@ const Contact = () => {
       id="contact"
       className="min-h-screen flex flex-col justify-center items-center px-6 py-20 bg-[#0d1117]"
     >
-      <h2 className="text-4xl font-bold mb-12 text-cyan-400">Contact</h2>
+      <h2 className="text-4xl font-bold mb-12 text-cyan-400">Get in Touch</h2>
 
       <p className="text-lg text-gray-300 mb-8 text-center max-w-2xl">
         Feel free to reach out for collaborations, opportunities, or just a tech
