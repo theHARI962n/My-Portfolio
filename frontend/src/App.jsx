@@ -14,6 +14,7 @@ import { fairyDustCursor } from "cursor-effects";
 import CursorStarTrail from "./components/CursorStarTrail";
 import CommandPalette from "./components/CommandPalette";
 import Resume from "./components/ResumeSection";
+import Chatbot from "./components/chatbot";
 import './App.css';
 function App() {
   // useEffect(() => {
@@ -70,6 +71,7 @@ function App() {
         open={searchOpen}
         onClose={() => setSearchOpen(false)}
       />
+      <Chatbot />
     </>
   );
 }
