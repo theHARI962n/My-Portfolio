@@ -1,14 +1,14 @@
 # Portfolio
 
-# 🌐 Personal Portfolio
+# Personal Portfolio
 
 This is my personal portfolio website built with [Vite](https://vitejs.dev/), [React](https://react.dev/), and deployed on [Vercel](https://vercel.com/).
 
-🔗 **Live Demo:** [hariharan-portfolio-pi.vercel.app](https://hariharan-portfolio-pi.vercel.app)
+<!-- 🔗 **Live Demo:** [hariharan-portfolio-pi.vercel.app](https://hariharan-portfolio-pi.vercel.app)
 
----
+--- -->
 
-## ✨ Features
+## Features
 - Modern and minimal UI
 - Fully responsive design (mobile-friendly)
 - Hero section
@@ -18,13 +18,13 @@ This is my personal portfolio website built with [Vite](https://vitejs.dev/), [R
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** React, Vite, Tailwind CSS
 - **Deployment:** Vercel
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Clone the repo
 ```bash

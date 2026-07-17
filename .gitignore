@@ -29,3 +29,4 @@ dist-ssr
 backend/
 changes.md 
 howibuilt.txt
+.env
