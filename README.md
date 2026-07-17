@@ -16,6 +16,8 @@ This is my personal portfolio website built with [Vite](https://vitejs.dev/), [R
 - Skills & Projects showcase
 - Contact, Publications,Footer section
 
+- CHATBOT building in Progress
+
 ---
 
 ## Tech Stack
